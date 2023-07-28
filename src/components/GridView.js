@@ -1,46 +1,29 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useProductContext } from '../context/productcontext';
-import Product from './Product';
+import React from "react";
+import styled from "styled-components";
+import Product from "./Product";
 
-const FeatureProduct = () => {
-    const { isLoading, featureProducts } = useProductContext();
-    
-    if(isLoading){
-        return <div
-        className="page_loading"
-        style={{
-          fontSize: '3.2rem',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <span className="loading_text">Loading...</span>
-      </div>
-    }
-
-    return (
-        <Wrapper className='section'>
-            <div className="container">
-                <div className="intro-data">Check Now!</div>
-                <div className="common-heading">Our Feature Services</div>
-                <div className="grid grid-three-column">
-                    {featureProducts.map((curElem) => {
-                        return <Product key={curElem.id} {...curElem} />;
-                    })}
-                </div>
-            </div>
+const GridView = ({ products }) => {
+    console.log(products);
+  return (
+        <Wrapper className="section">
+        <div className="container grid grid-three-column">
+            {products.map((curElem) => {
+            return <Product key={curElem.id} {...curElem} />;
+            })}
+        </div>
         </Wrapper>
-    )
-}
+  );
+};
 
 const Wrapper = styled.section`
   padding: 9rem 0;
-  background-color: ${({ theme }) => theme.colors.bg};
 
   .container {
     max-width: 120rem;
+  }
+
+  .grid {
+    gap: 3.2rem;
   }
 
   figure {
@@ -66,13 +49,13 @@ const Wrapper = styled.section`
       width: 100%;
     }
     &:hover img {
-      transform: scale(1.04);
+      transform: scale(1.03);
     }
     img {
       max-width: 100%;
       margin-top: 2rem;
-      height: 210px;
-      width: 300px;
+      height: 180px;
+      width: 250px;
       transition: all 0.2s linear;
       border-radius: 1rem;
     }
@@ -143,6 +126,10 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  .card:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  }
 `;
 
-export default FeatureProduct;
+export default GridView;
