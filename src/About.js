@@ -6,7 +6,8 @@ const About = () => {
   const {myName} = useProductContext();
 
   const data ={
-    name: 'Thapa E-commerce',
+    name: 'Digital Mart - A online electronics store',
+    imageUrl:'/images/hero-about.png',
   };
   
   return (

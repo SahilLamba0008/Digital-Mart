@@ -6,7 +6,8 @@ import FeatureProduct from './components/FeatureProduct';
 
 const Home = () => {
   const data = {
-    name:'Thapa Store',
+    name:'Digital Mart',
+    imageUrl:'/images/hero-home.png',
   };
 
   return (

@@ -27,7 +27,7 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Thapa Technical</h3>
+              <h3>Digital Mart : E-Store</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
             <div className="footer-subscribe">
@@ -62,7 +62,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+                @{new Date().getFullYear()} Digital Mart. All Rights Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>
@@ -180,6 +180,7 @@ const Wrapper = styled.section`
 
   input[type="submit"] {
     border-radius: 10px;
+    background-color: #223BC9;
   }
   input[type="email"] {
     border-radius: 7px;

@@ -25,7 +25,7 @@ const Nav = () => {
             }
             &:hover,
             &:active {
-                color: ${({ theme }) => theme.colors.helper};
+                color: #067FD0;;
             }
             }
         }
@@ -59,7 +59,7 @@ const Nav = () => {
             place-items: center;
             top: -20%;
             left: 70%;
-            background-color: ${({ theme }) => theme.colors.helper};
+            background-color: #067FD0;
             }
         }
         .user-login--name {

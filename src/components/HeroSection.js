@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import { Button } from '../styles/Button';
 
 const HeroSection = ({myData}) => {
-    const { name } = myData;
+    const { name,imageUrl } = myData;
+    // console.log(imageUrl);
   return (
     <Wrapper>
         <div className='container'>
@@ -25,7 +26,7 @@ const HeroSection = ({myData}) => {
                 {/* Hero section image */}
                 <div className='hero-section-image'>
                     <figure>
-                        <img src='images/hero.jpg' alt='hero-section' className='img-style' />
+                        <img src={imageUrl} alt='hero-section' className='img-style' />
                     </figure>
                 </div>
             </div>
@@ -53,6 +54,7 @@ const Wrapper = styled.section`
     }
 
     .intro-data {
+      color: #067FD0;
       margin-bottom: 0;
     }
   }
@@ -71,7 +73,8 @@ const Wrapper = styled.section`
       content: "";
       width: 100%;
       height: 100%;
-      background-color: rgba(81, 56, 238, 0.2);
+      background-color: #223BC9;
+      opacity: 1;
       position: absolute;
       left: 6%;
       top: -3rem;
@@ -84,13 +87,16 @@ const Wrapper = styled.section`
     width: 100%;
     height: auto;
     border-radius: 20px;
+    box-shadow: 6rem -5rem 0.1rem 0.1rem  rgba(0, 50, 255, 0.4);
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .grid {
       gap: 10rem;
     }
-
+    .img-style{
+      box-shadow: none;
+    }
     figure::after {
       content: "";
       width: 100%;
@@ -98,7 +104,7 @@ const Wrapper = styled.section`
       left: 3%;
       top: -2rem;
       /* bottom: 10%; */
-      background-color: rgba(81, 56, 238, 0.4);
+      background-color: #223BC9;
     }
   }
 `;
