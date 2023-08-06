@@ -50,5 +50,4 @@ const ProductReducer = (state, action) => {
   }
 };
 
-  
-  export default ProductReducer;
+export default ProductReducer;

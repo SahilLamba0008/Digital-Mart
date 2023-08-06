@@ -13,11 +13,12 @@ const MyImage = ({ imgs = [{ url: "" }] }) => {
               <img
                 src={curElm.url}
                 alt={curElm.filename}
-                className="box-image--style"
+                className="box-image--style img-box"
                 key={index}
                 onClick={() => setMainImage(curElm)}
               />
             </figure>
+            
           );
         })}
       </div>
@@ -42,7 +43,6 @@ const Wrapper = styled.section`
     width: 100%;
     gap: 1rem;
     /* order: 2; */
-
     img {
       max-width: 100%;
       max-height: 100%;
@@ -71,7 +71,11 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
-
+  .img-box {
+    width: 150px;
+    height: 100px;
+    background-color: black;
+  }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     display: flex;
     flex-direction: column;

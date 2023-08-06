@@ -48,7 +48,7 @@ const Footer = () => {
                   <FaInstagram className="icons" />
                 </div>
                 <div>
-                    <FaYoutube className="icons" />
+                  <FaYoutube className="icons" />
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ const Wrapper = styled.section`
     padding-top: 9rem;
 
     .container {
-        text-align: center;
+      text-align: center;
     }
     hr {
       margin-bottom: 2rem;
@@ -180,7 +180,7 @@ const Wrapper = styled.section`
 
   input[type="submit"] {
     border-radius: 10px;
-    background-color: #223BC9;
+    background-color: #223bc9;
   }
   input[type="email"] {
     border-radius: 7px;

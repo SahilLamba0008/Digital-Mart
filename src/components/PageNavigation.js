@@ -18,10 +18,12 @@ const Wrapper = styled.section`
   align-items: center;
   font-size: 3.2rem;
   padding-left: 4.8rem;
-
+  
   a {
     font-size: 3.2rem;
+    color: #223BC9;
   }
+  
 `;
 
 export default PageNavigation;

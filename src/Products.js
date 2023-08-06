@@ -5,22 +5,20 @@ import ProductList from "./components/ProductList";
 import { useFilterContext } from "./context/filter_context";
 
 const Products = () => {
-
   const { filter_products } = useFilterContext(); // imported Filter_Products array form useFilterContext() : Custom Hook
   console.log(filter_products);
-  
+
   return (
     <Wrapper>
       <div className="container grid grid-filter-column">
         <div>
           <FilterSection />
         </div>
-
         <section className="product-view--sort">
           <div className="sort-filter">
             <Sort />
           </div>
-          <div className="main-product"> 
+          <div className="main-product">
             <ProductList />
           </div>
         </section>

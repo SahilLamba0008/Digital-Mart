@@ -170,7 +170,7 @@ const Wrapper = styled.section`
       font-weight: bold;
     }
     .product-data-real-price {
-      color: ${({ theme }) => theme.colors.btn};
+      color: #223BC9;
     }
     .product-data-info {
       display: flex;
@@ -205,7 +205,9 @@ const Wrapper = styled.section`
     align-items: center;
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    .content{
     padding: 0 2.4rem;
+    }
   }
 `;
 

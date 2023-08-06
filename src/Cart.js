@@ -146,7 +146,8 @@ const Wrapper = styled.section`
     }
   }
 
-  ${'' /* @media (max-width: ${({ theme }) => theme.media.mobile}) {
+  ${
+    "" /* @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .grid-five-column {
       grid-template-columns: 1.5fr 1fr 0.5fr;
     }
@@ -176,7 +177,8 @@ const Wrapper = styled.section`
         padding: 3.2rem;
       }
     }
-  } */}
+  } */
+  }
 `;
 
 export default Cart;

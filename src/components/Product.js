@@ -8,16 +8,22 @@ const Product = (curElem) => {
     <NavLink to={`/singleproduct/${id}`}>
       <div className="card">
         <figure>
-          <img 
-          // style={{ width: "250px", height: "200px" }}
-          src={image} alt={name} />
-          <figcaption className="caption" style={{color:'#067FD0'}}>{category}</figcaption>
+          <img
+            // style={{ width: "250px", height: "200px" }}
+            src={image}
+            alt={name}
+          />
+          <figcaption className="caption" style={{ color: "#067FD0" }}>
+            {category}
+          </figcaption>
         </figure>
         <hr></hr>
         <div className="card-data">
           <div className="card-data-flex">
             <h3>{name}</h3>
-            <p className="card-data--price" style={{color:'#067FD0'}}>{<FormatPrice price={price} />}</p>
+            <p className="card-data--price" style={{ color: "#067FD0" }}>
+              {<FormatPrice price={price} />}
+            </p>
           </div>
         </div>
       </div>

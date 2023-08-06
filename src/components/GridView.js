@@ -3,15 +3,15 @@ import styled from "styled-components";
 import Product from "./Product";
 
 const GridView = ({ products }) => {
-    console.log(products);
+  console.log(products);
   return (
-        <Wrapper className="section">
-        <div className="container grid grid-three-column">
-            {products.map((curElem) => {
-            return <Product key={curElem.id} {...curElem} />;
-            })}
-        </div>
-        </Wrapper>
+    <Wrapper className="section">
+      <div className="container grid grid-three-column">
+        {products.map((curElem) => {
+          return <Product key={curElem.id} {...curElem} />;
+        })}
+      </div>
+    </Wrapper>
   );
 };
 
@@ -32,9 +32,10 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
-    ${'' /* overflow: hidden; */}
+    ${"" /* overflow: hidden; */}
     transition: all 0.1s linear;
-    ${'' /* &::after {
+    ${
+      "" /* &::after {
       content: "";
       position: absolute;
       top: 0;
@@ -44,7 +45,8 @@ const Wrapper = styled.section`
       background-color: rgba(0, 0, 0, 0.2);
       transition: all 0.2s linear;
       cursor: pointer;
-    } */}
+    } */
+    }
     &:hover::after {
       width: 100%;
     }
@@ -74,7 +76,7 @@ const Wrapper = styled.section`
   }
 
   .card {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
 
@@ -90,10 +92,10 @@ const Wrapper = styled.section`
       align-items: center;
     }
     hr {
-        margin: 2rem 0;
-        color: rgba(0, 0, 0, 0.0);
-        opacity: 0.04;
-        border: 1px solid black;
+      margin: 2rem 0;
+      color: rgba(0, 0, 0, 0);
+      opacity: 0.04;
+      border: 1px solid black;
     }
 
     h3 {
@@ -127,7 +129,7 @@ const Wrapper = styled.section`
     }
   }
 
-  .card:hover{
+  .card:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
   }
 `;

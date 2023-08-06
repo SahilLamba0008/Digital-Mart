@@ -1,42 +1,42 @@
-import React from 'react';
-import styled from 'styled-components';
-import { TbTruckDelivery } from 'react-icons/tb';
+import React from "react";
+import styled from "styled-components";
+import { TbTruckDelivery } from "react-icons/tb";
 import { MdSecurity } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri";
 
 const Services = () => {
-  return (          
+  return (
     <Wrapper>
-        <div className='container'>
-            <div className='grid grid-three-column'>
-                <div className='services-1'>
-                    <div>
-                        <TbTruckDelivery className='icon'/>
-                        <h3>Super Fast and Free Delivery</h3>
-                    </div>
-                </div>
-                <div className='services-2'>
-                    <div className='services-column-2'>
-                        <MdSecurity className='icon' />
-                        <h3>Non-Contact Shipping</h3>
-                    </div>
-                    <div className='services-column-2'>
-                        <GiReceiveMoney className="icon" />
-                        <h3>Money-back Guaranteed</h3>
-                    </div>
-                </div>
-                <div className='services-3'>
-                    <div>
-                    <RiSecurePaymentLine className="icon" />
-                    <h3>Super Secure Payment System</h3>
-                    </div>
-                </div>
+      <div className="container">
+        <div className="grid grid-three-column">
+          <div className="services-1">
+            <div>
+              <TbTruckDelivery className="icon" />
+              <h3>Super Fast and Free Delivery</h3>
             </div>
+          </div>
+          <div className="services-2">
+            <div className="services-column-2">
+              <MdSecurity className="icon" />
+              <h3>Non-Contact Shipping</h3>
+            </div>
+            <div className="services-column-2">
+              <GiReceiveMoney className="icon" />
+              <h3>Money-back Guaranteed</h3>
+            </div>
+          </div>
+          <div className="services-3">
+            <div>
+              <RiSecurePaymentLine className="icon" />
+              <h3>Super Secure Payment System</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </Wrapper>
-  )         
-}
+  );
+};
 
 const Wrapper = styled.section`
   padding: 9rem 0;
@@ -83,39 +83,39 @@ const Wrapper = styled.section`
         gap: 1rem;
       }
 
-      h3{
+      h3 {
         padding-left: 4%;
         margin-top: -1%;
       }
 
-      .icon{
+      .icon {
         margin-left: 1%;
       }
     }
-    
-    @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    .services-column-2 {
-      background: ${({ theme }) => theme.colors.bg};
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-      border-radius: 2rem;
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 
-      .icon{
-        margin-bottom: 3%;
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+      .services-column-2 {
+        background: ${({ theme }) => theme.colors.bg};
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+        .icon {
+          margin-bottom: 3%;
+        }
       }
     }
   }
-  }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    .services-2{
-        height: 60rem;
+    .services-2 {
+      height: 60rem;
     }
   }
-  
+
   h3 {
     margin-top: 1.4rem;
     font-size: 2rem;
@@ -128,8 +128,8 @@ const Wrapper = styled.section`
     padding: 2rem;
     border-radius: 50%;
     background-color: #fff;
-    color: #223BC9;
+    color: #223bc9;
   }
 `;
 
-export default Services;    
+export default Services;

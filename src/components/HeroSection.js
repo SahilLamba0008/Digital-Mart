@@ -1,39 +1,40 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-import { Button } from '../styles/Button';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+import { Button } from "../styles/Button";
 
-const HeroSection = ({myData}) => {
-    const { name,imageUrl } = myData;
-    // console.log(imageUrl);
+const HeroSection = ({ myData }) => {
+  const { name, imageUrl } = myData;
+  // console.log(imageUrl);
   return (
     <Wrapper>
-        <div className='container'>
-            <div className='grid grid-two-column'>
-                <div className='hero-section-data'>
-                    <p className='intro-data'>Welcome to </p>
-                    <h1>{name}</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation mollit anim id est laborum.
-                    </p>
-                    <NavLink to='/products'>
-                        <Button>
-                            Shop Now
-                        </Button>
-                    </NavLink>
-                </div>
+      <div className="container">
+        <div className="grid grid-two-column">
+          <div className="hero-section-data">
+            <p className="intro-data">Welcome to </p>
+            <h1>{name}</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation mollit anim id est
+              laborum.
+            </p>
+            <NavLink to="/products">
+              <Button>Shop Now</Button>
+            </NavLink>
+          </div>
 
-                {/* Hero section image */}
-                <div className='hero-section-image'>
-                    <figure>
-                        <img src={imageUrl} alt='hero-section' className='img-style' />
-                    </figure>
-                </div>
-            </div>
+          {/* Hero section image */}
+          <div className="hero-section-image">
+            <figure>
+              <img src={imageUrl} alt="hero-section" className="img-style" />
+            </figure>
+          </div>
         </div>
+      </div>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
   padding: 12rem 0;
@@ -54,7 +55,7 @@ const Wrapper = styled.section`
     }
 
     .intro-data {
-      color: #067FD0;
+      color: #067fd0;
       margin-bottom: 0;
     }
   }
@@ -73,7 +74,7 @@ const Wrapper = styled.section`
       content: "";
       width: 100%;
       height: 100%;
-      background-color: #223BC9;
+      background-color: #223bc9;
       opacity: 1;
       position: absolute;
       left: 6%;
@@ -87,14 +88,14 @@ const Wrapper = styled.section`
     width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 6rem -5rem 0.1rem 0.1rem  rgba(0, 50, 255, 0.4);
+    box-shadow: 6rem -5rem 0.1rem 0.1rem rgba(0, 50, 255, 0.4);
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .grid {
       gap: 10rem;
     }
-    .img-style{
+    .img-style {
       box-shadow: none;
     }
     figure::after {
@@ -104,7 +105,7 @@ const Wrapper = styled.section`
       left: 3%;
       top: -2rem;
       /* bottom: 10%; */
-      background-color: #223BC9;
+      background-color: #223bc9;
     }
   }
 `;

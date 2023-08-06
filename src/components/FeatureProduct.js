@@ -1,46 +1,48 @@
-import React from 'react';
-import styled from 'styled-components';
-import { useProductContext } from '../context/productcontext';
-import Product from './Product';
+import React from "react";
+import styled from "styled-components";
+import { useProductContext } from "../context/productcontext";
+import Product from "./Product";
 
 const FeatureProduct = () => {
-    const { isLoading, featureProducts } = useProductContext();
-    
-    if(isLoading){
-        return <div
+  const { isLoading, featureProducts } = useProductContext();
+
+  if (isLoading) {
+    return (
+      <div
         className="page_loading"
         style={{
-          fontSize: '3.2rem',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          fontSize: "3.2rem",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <span className="loading_text">Loading...</span>
       </div>
-    }
+    );
+  }
 
-    return (
-        <Wrapper className='section'>
-            <div className="container">
-                <div className="intro-data">Check Now!</div>
-                <div className="common-heading">Our Feature Services</div>
-                <div className="grid grid-three-column">
-                    {featureProducts.map((curElem) => {
-                        return <Product key={curElem.id} {...curElem} />;
-                    })}
-                </div>
-            </div>
-        </Wrapper>
-    )
-}
+  return (
+    <Wrapper className="section">
+      <div className="container">
+        <div className="intro-data">Check Now!</div>
+        <div className="common-heading">Our Feature Services</div>
+        <div className="grid grid-three-column">
+          {featureProducts.map((curElem) => {
+            return <Product key={curElem.id} {...curElem} />;
+          })}
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.section`
   padding: 9rem 0;
   background-color: ${({ theme }) => theme.colors.bg};
 
-  .intro-data{
-    color: #067FD0;
+  .intro-data {
+    color: #067fd0;
   }
   .container {
     max-width: 120rem;
@@ -52,9 +54,10 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
-    ${'' /* overflow: hidden; */}
+    ${"" /* overflow: hidden; */}
     transition: all 0.1s linear;
-    ${'' /* &::after {
+    ${
+      "" /* &::after {
       content: "";
       position: absolute;
       top: 0;
@@ -64,7 +67,8 @@ const Wrapper = styled.section`
       background-color: rgba(0, 0, 0, 0.2);
       transition: all 0.2s linear;
       cursor: pointer;
-    } */}
+    } */
+    }
     &:hover::after {
       width: 100%;
     }
@@ -94,7 +98,7 @@ const Wrapper = styled.section`
   }
 
   .card {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
 
@@ -110,10 +114,10 @@ const Wrapper = styled.section`
       align-items: center;
     }
     hr {
-        margin: 2rem 0;
-        color: rgba(0, 0, 0, 0.0);
-        opacity: 0.04;
-        border: 1px solid black;
+      margin: 2rem 0;
+      color: rgba(0, 0, 0, 0);
+      opacity: 0.04;
+      border: 1px solid black;
     }
 
     h3 {
