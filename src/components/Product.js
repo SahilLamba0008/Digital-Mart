@@ -9,7 +9,6 @@ const Product = (curElem) => {
       <div className="card">
         <figure>
           <img
-            // style={{ width: "250px", height: "200px" }}
             src={image}
             alt={name}
           />

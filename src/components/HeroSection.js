@@ -5,7 +5,6 @@ import { Button } from "../styles/Button";
 
 const HeroSection = ({ myData }) => {
   const { name, imageUrl } = myData;
-  // console.log(imageUrl);
   return (
     <Wrapper>
       <div className="container">
