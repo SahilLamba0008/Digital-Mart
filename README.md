@@ -37,11 +37,10 @@ Here are some images from the DIGITAL MART project:
 6. *Contact-Us Page* - ![Screenshot (79)](https://github.com/SahilLamba0008/DigitalMart_Ecom_WebApp/assets/125360487/cfbf6b80-95d8-4931-afbc-f12a46c824dc)
 
 7. *Single-Product Page* - ![Screenshot (81)](https://github.com/SahilLamba0008/DigitalMart_Ecom_WebApp/assets/125360487/55097ff9-9ee3-461d-979c-ef7322334b72)
+8. *Mobile-View* -
 
-8. *Mobile-View* - [Insert Image 1 Her![Capture](https://github.com/SahilLamba0008/DigitalMart_Ecom_WebApp/assets/125360487/b4b0a7f7-b3b2-415d-87d9-39b024b88c8d)
-e]
+![Capture](https://github.com/SahilLamba0008/DigitalMart_Ecom_WebApp/assets/125360487/b4b0a7f7-b3b2-415d-87d9-39b024b88c8d)
 
-9. *Mobile-View Products Page* - 
 ![Capture 3](https://github.com/SahilLamba0008/DigitalMart_Ecom_WebApp/assets/125360487/39da758e-64ec-48f5-8bff-b02f7a25feb4)
 
-10. *Mobile-View Footer* - ![Capture 2](https://github.com/SahilLamba0008/DigitalMart_Ecom_WebApp/assets/125360487/8661ec37-334e-4350-9859-630bc91aa8f1)
+![Capture 2](https://github.com/SahilLamba0008/DigitalMart_Ecom_WebApp/assets/125360487/8661ec37-334e-4350-9859-630bc91aa8f1)
