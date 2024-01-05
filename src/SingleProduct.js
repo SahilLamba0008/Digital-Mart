@@ -21,12 +21,21 @@ const SingleProduct = () => {
 
   const { id } = useParams();
 
-  const { name, company, price, description, stock, stars, reviews, image } =
-    singleProduct;
+  const {
+    name,
+    company,
+    price,
+    description,
+    stock,
+    stars,
+    reviews,
+    image,
+  } = singleProduct;
 
   useEffect(() => {
     getSingleProduct(`${API}?id=${id}`);
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
 
   if (isSingleLoading) {
     return (
