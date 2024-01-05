@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaCheck } from "react-icons/fa";
 import CartAmountToggle from "./CartAmountToggle";
 import { NavLink } from "react-router-dom";
+import { Button } from "../styles/Button";
 
 const AddToCart = ({ product }) => {
   const { colors, stock } = product;
