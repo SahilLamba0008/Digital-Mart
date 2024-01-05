@@ -11,9 +11,8 @@ export const GlobalStyle = createGlobalStyle`
 
 
 html {
-  font-size: 62.5%;
-  /* scroll-behavior: smooth; */
-  /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 

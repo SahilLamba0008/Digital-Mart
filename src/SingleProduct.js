@@ -21,22 +21,12 @@ const SingleProduct = () => {
 
   const { id } = useParams();
 
-  const {
-    id: alias,
-    name,
-    company,
-    price,
-    description,
-    category,
-    stock,
-    stars,
-    reviews,
-    image,
-  } = singleProduct;
+  const { name, company, price, description, stock, stars, reviews, image } =
+    singleProduct;
 
   useEffect(() => {
     getSingleProduct(`${API}?id=${id}`);
-  }, []);
+  }, [getSingleProduct, id]);
 
   if (isSingleLoading) {
     return (
@@ -170,7 +160,7 @@ const Wrapper = styled.section`
       font-weight: bold;
     }
     .product-data-real-price {
-      color: #223BC9;
+      color: #223bc9;
     }
     .product-data-info {
       display: flex;
@@ -205,8 +195,8 @@ const Wrapper = styled.section`
     align-items: center;
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    .content{
-    padding: 0 2.4rem;
+    .content {
+      padding: 0 2.4rem;
     }
   }
 `;

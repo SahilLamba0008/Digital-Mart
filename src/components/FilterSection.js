@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import { useFilterContext } from "../context/filter_context";
-import { FaCheck } from "react-icons/fa";
 import FormatPrice from "../Helpers/FormatPrice";
 import { Button } from "../styles/Button";
 
 const FilterSection = () => {
   const {
-    filters: { text, category, color, price, maxPrice, minPrice },
+    filters: { text, category, price, maxPrice, minPrice },
     updateFilterValue,
     all_products,
     clearFilters,
@@ -29,7 +28,6 @@ const FilterSection = () => {
   // we need to have the individual data of each in an array format
   const categoryData = getUniqueData(all_products, "category");
   const companyData = getUniqueData(all_products, "company");
-  const colorsData = getUniqueData(all_products, "colors");
   // console.log(
   //   "🚀 ~ file: FilterSection.js ~ line 23 ~ FilterSection ~ companyData",
   //   colorsData
